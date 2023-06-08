@@ -1,3 +1,5 @@
+<?php include_once __DIR__ . '/logic.php'; ?>
+
 <!DOCTYPE html>
 <html lang="en">
 

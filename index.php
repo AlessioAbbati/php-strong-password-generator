@@ -18,39 +18,41 @@
     <div class="container">
         <h1>Strong Password Generator</h1>
         <h2>Genera una password sicura</h2>
-        <div class="alert alert-danger" role="alert">
-            Nessun parametro valido inserito
-        </div>
-        <div class="row g-3 align-items-center">
-            <div class="col-auto">
-                <label for="inputPassword6" class="col-form-label">Lunghezza Password:</label>
+        <form method="GET">
+            <div class="row g-3 align-items-center">
+                <div class="col-auto">
+                    <label for="inputPassword6" class="col-form-label">Lunghezza Password:</label>
+                </div>
+                <div class="col-auto">
+                    <input name="number" type="number" id="inputPassword6" class="form-control" aria-labelledby="passwordHelpInline">
+                    <div>
+                        <?= generate_random_pass($number) ?>
+                    </div>
+                </div>
             </div>
-            <div class="col-auto">
-                <input type="password" id="inputPassword6" class="form-control" aria-labelledby="passwordHelpInline">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="lettere" name="chars[]" value="lettere">
+                <label class="form-check-label" for="lettere">
+                    Lettere
+                </label>
             </div>
-        </div>
-        <div class="form-check">
-				<input class="form-check-input" type="checkbox" id="lettere" name="chars[]" value="lettere">
-				<label class="form-check-label" for="lettere">
-					Lettere
-				</label>
-			</div>
 
-			<div class="form-check">
-				<input class="form-check-input" type="checkbox" id="numeri" name="chars[]" value="numeri">
-				<label class="form-check-label" for="numeri">
-					Numeri
-				</label>
-			</div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="numeri" name="chars[]" value="numeri">
+                <label class="form-check-label" for="numeri">
+                    Numeri
+                </label>
+            </div>
 
-			<div class="form-check">
-				<input class="form-check-input" type="checkbox" id="simboli" name="chars[]" value="simboli">
-				<label class="form-check-label" for="simboli">
-					Simboli
-				</label>
-			</div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="simboli" name="chars[]" value="simboli">
+                <label class="form-check-label" for="simboli">
+                    Simboli
+                </label>
+            </div>
             <button type="submit" class="btn btn-primary">Submit</button>
-			<a href="/php-strong-password-generator" class="btn btn-secondary">Reset</a>
+            <a href="/php-strong-password-generator" class="btn btn-secondary">Reset</a>
+        </form>
     </div>
 </body>
 

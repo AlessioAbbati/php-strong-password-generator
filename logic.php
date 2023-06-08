@@ -1,6 +1,9 @@
 <?php 
 
 $number = $_GET['number'] ?? '';
+$letters = $_GET['letters'] ?? '';
+$numbers = $_GET['numbers'] ?? '';
+$symbols = $_GET['symbols'] ?? '';
 
 function generate_random_pass($length)
 {

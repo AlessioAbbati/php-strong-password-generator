@@ -31,21 +31,21 @@
                 </div>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="lettere" name="chars[]" value="lettere">
+                <input class="form-check-input" type="checkbox" id="lettere" name="letters" value="lettere">
                 <label class="form-check-label" for="lettere">
                     Lettere
                 </label>
             </div>
 
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="numeri" name="chars[]" value="numeri">
+                <input class="form-check-input" type="checkbox" id="numeri" name="numbers" value="numeri">
                 <label class="form-check-label" for="numeri">
                     Numeri
                 </label>
             </div>
 
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="simboli" name="chars[]" value="simboli">
+                <input class="form-check-input" type="checkbox" id="simboli" name="symbols" value="simboli">
                 <label class="form-check-label" for="simboli">
                     Simboli
                 </label>
